@@ -1,0 +1,870 @@
+@import "global.css";
+@mixin flexcenter {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.topnav
+{
+   width: 100%;
+   .header
+{
+   width: 100%;
+   height: 30px;
+   background-color: black;
+    @include flexcenter();
+   p
+   {
+      color: white;
+      text-transform: capitalize;
+      font-size: 12px;
+      text-align: center;
+      margin-inline-end: 5px;
+      margin-top: 10px;
+      span
+{
+   color: red;
+}
+   }
+   .star-icon
+   {
+    @include flexcenter();
+   }
+img
+   {
+   width: 14px;
+
+   }
+} 
+}
+*
+{
+  margin: 0 ;
+  box-sizing: border-box;
+
+}
+:root
+{
+  --primary-color:black;
+  --secondry-color: #900C3F ;
+  --dark-color:#4d4b4b;
+  --semi-light: #f7f7f7;
+}
+ul
+{
+  list-style: none;
+  padding: 0px;
+}
+a&hover
+{
+  text-decoration: none;
+}
+
+.navbar
+{
+  width: 100%;
+  padding: 10px 0px;
+  .content
+  {
+     width: 100%;
+    justify-content: space-between;
+   @include flexcenter();
+    .nav-item
+{
+  display: flex;
+
+  .nav-link.drop-list
+  {
+    padding-inline-end: 10px;
+    position: relative;
+    z-index: 9;
+    .drop-nav  .drop-item h1
+{
+font-size: 15px;
+text-transform: capitalize;
+font-weight: 700;
+letter-spacing: 2px;
+}
+  }
+  .nav-link a
+{
+  color:#4d4b4b;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  &hover
+  {
+    color:var(--primary-color)
+
+  }
+}
+  .nav-list
+{
+  margin-inline-end: 5px;
+
+  &active
+{
+  color: var(--primary-color);
+} 
+}
+}
+  }
+}
+
+.navbar .content .nav-item .nav-link.drop-list .drop-nav  .drop-item h1
+{
+font-size: 15px;
+text-transform: capitalize;
+font-weight: 700;
+letter-spacing: 2px;
+}
+.navbar .content .nav-item .nav-link.drop-list .drop-nav  .drop-item .drop-link h2{
+font-size: 13px;
+text-transform: capitalize;
+font-weight: 600;
+padding: 5px 0px;
+letter-spacing: 2px;
+}
+.navbar .content .nav-item .nav-link.drop-list .drop-nav  .drop-item .drop-link h2 .p{
+background-color:red;
+padding: 3px 3px;
+border-radius: 2px;
+font-size: 12px;
+color: white;
+}
+.navbar .content .nav-item .nav-link.drop-list .drop-nav  .drop-item .drop-link h2 .a{
+   background-color:green;
+   padding: 3px 3px;
+   border-radius: 2px;
+   font-size: 12px;
+   color: white;
+   }
+.navbar .content .nav-item .nav-link.drop-list .drop-nav  {
+  width: 700px;
+  height: 300px;
+  padding: 20px 15px;
+  background-color:#fff;
+  position: absolute;
+  transform: translateY(20px);
+  top: 100%;
+  left: calc(50% - 350px);
+  opacity:.5;
+  visibility: hidden;
+  transition: .5s;
+  display: flex;
+ justify-content: space-between;
+  
+ 
+}
+.navbar .content .nav-item .nav-link.drop-list .drop-nav img
+{
+   width: 150px;
+}
+.navbar .content .nav-item .nav-link.drop-list:hover .drop-nav {
+  opacity: 1;
+  transform: translateY(10px);
+  visibility: visible;
+}
+
+.navbar .content .image-brand img
+{
+  width: 80%;
+  object-fit: contain;
+  object-position: center;
+}
+.navbar .content .search-logo
+{
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   margin-top: -10px;
+}
+.navbar .content .search-logo .search img
+{
+  margin-inline-end: 8px;
+  width: 20px;
+  filter: invert(0%) sepia(92%) saturate(7455%) hue-rotate(122deg) brightness(88%) contrast(101%);
+}
+
+header  .row
+{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content:space-around;
+  
+ 
+}
+ header .row .card .images-head .paragraph
+ {
+   width: 250px;
+   height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+   position: absolute;
+   left:calc(50% - 175px );
+  top :calc(50% - 75px );
+  text-align: center;
+ }
+ header .row .card .images-head .paragraph p
+{
+font-size: 15px;
+color: var(--semi-light);
+text-transform: uppercase;
+color:white
+}
+
+header .row .card .images-head .paragraph h1
+{
+font-weight: 700;
+font-size: 50px;
+color:#fff;
+text-transform: uppercase;
+}
+header .card
+{
+display: flex;
+align-items: center;
+align-content: center;
+justify-content:center;
+margin-left: 50px;
+border:none;
+}
+header .row .card img
+{
+width:600px;
+height: 600px;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+margin-inline-end: 20px;
+}
+.section-showing 
+{
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.section .content
+{
+ margin-top: 70px;
+ text-align: center;
+}
+.section .headd
+{
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   
+}
+.section .headd h4
+
+{
+   font-size: 17px;
+   text-transform: capitalize;
+   font-weight: 700;
+   margin-inline-end: 10px;
+}
+.section .headd h5
+
+{
+   font-size: 17px;
+   text-transform: capitalize;
+   font-weight: 700;
+   margin-inline-end: 10px;
+}
+.section .headd h5::before
+{
+  
+     content: "";
+     width: 20px;
+     height: 0px;
+     color: var(--secondry-color);
+     border: 1px solid;
+     margin-inline-end: 10px;
+     transform: rotateZ(180deg);
+     display:inline-flex;
+  
+}
+.section .content h1{
+   font-size: 20px;
+   font-weight: 900;
+   text-transform: capitalize;
+}
+.section-showing .row
+{
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.section-showing .card
+{
+  width: 20%;
+   display: flex;
+   justify-content: center;
+   border: none;
+}
+.section-showing .card .body h5,
+.section-showing .card .body h6
+{
+text-transform: capitalize;
+font-size: 12px;
+margin-top: 10px;
+}
+.section-showing .card img
+{
+  width:250px;
+ display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.section-showing2 .row
+{
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   align-content: center;
+  
+}
+.section-showing2 .card
+{
+
+   display: flex;
+  justify-content: center;
+   border: none;
+   position: relative;
+}
+.section-showing2 .card p
+{
+position: absolute;
+top: 0px;
+padding: 5px 15px;
+margin-top: 10px;
+text-transform: capitalize;
+background-color: #900C3F;
+color: #fff;
+}
+.section-showing2 .card h4
+{
+position: absolute;
+top: 0px;
+padding: 5px 15px;
+margin-top: 10px;
+font-size: 14px;
+text-transform: capitalize;
+background-color:red;
+color: #fff;
+}
+.section-showing .card h4
+{
+position: absolute;
+top: 0px;
+padding: 5px 15px;
+margin-top: 10px;
+font-size: 14px;
+text-transform: capitalize;
+background-color:#4d4b4b;
+color: #fff;
+}
+.section-showing  .card::after
+{
+  content: '';
+  position: absolute;
+ top:   0;
+  left: 0;
+  height: 100%;
+  background-color:var(--semi-light);
+  width:  0%;
+  transition: all .3s linear;
+  opacity: .2;
+}
+
+.section-showing .card::after ,
+.section-showing .card::before
+{
+  content: '';
+  position: absolute;
+  top:0;
+  transition: all .3s linear;
+ 
+}
+.section-showing .card:hover::before {
+  transform: translateX(0%);
+}
+.section-showing .card:hover {
+  transform: translateY(-10px);
+}
+.section-showing .card 
+{
+  position: relative;
+  overflow: hidden;
+}
+.section-showing .card::before 
+{
+  width:10%;
+  height: 20%;
+  background: url(../images/search.svg) bottom right / contain no-repeat;
+  right:40px;
+ top: 0px;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.section-showing .card::after 
+{
+  width:100px;
+  height: 30px;
+  content: 'select option';
+  background-color: #292828; 
+  right:0px;
+  color: #fff;
+  top: 300px;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.section-showing .card:hover::after
+{
+   opacity: 1;
+}
+.section-showing .card:hover:before 
+{
+   opacity: 1;
+}
+ 
+.section-showing2 .card .body h5,
+.section-showing2 .card .body h6
+{
+text-transform: capitalize;
+font-size: 12px;
+margin-top: 10px;
+}
+.section-showing2 .card img
+{
+  width:200px
+}
+ .btn-custom
+{
+  background-color:black;
+  display: flex;
+  height:40px;
+  width: 150px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-inline-end: 10px;
+ border-radius: 4px;
+ color: #f7f7f7;
+ text-transform: capitalize;
+ font-size: 13px;
+ font-weight: 600;
+ margin: auto;
+ margin-top: 50px;
+}
+.section-cards h6
+{
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+.section-style h6
+{
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+.section-cards
+{
+  padding: 100px 0px;
+  .card 
+{
+ margin-left: 40px;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  img
+{
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+}
+}
+.section-cards .card img
+{
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+.section-cards .card 
+{
+ margin-left: 40px;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.section-cards .card .header
+{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 30px;
+}
+.section-cards .card .header h1
+{
+  text-transform: capitalize;
+  color:white;
+  padding: 10px 0px 0px 0px;
+  width: 190px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.section-cards .card .header h2
+{
+  text-transform: capitalize;
+  color:#f7f7f7;
+  width: 190px;
+  padding: 5px 0px 0px 0px;
+  font-size: 30px;
+}
+.section-cards .content
+{
+  display: flex;
+  justify-content:center
+}
+.section-cards .card .header3
+{
+  position: absolute;
+  margin-left: 30px;
+  top: 400px;
+}
+.section-cards .card .header2 .btn-card,
+.section-cards .card .header3 .btn-card
+{
+text-transform: capitalize;
+background-color:transparent;
+width:90px;
+height: 30px;
+font-size: 15px;
+border: 1px solid white;
+font-weight: 700;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+color:white
+}
+.section-cards .card .header3 h1
+{
+  text-transform: capitalize;
+  color:cornflowerblue;
+  padding: 10px 0px 0px 0px;
+  width: 150px;
+  font-size: 18px;
+}
+
+.section-cards .card .header2
+{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.section-cards .card .header2 h1
+{
+  text-transform: capitalize;
+  color:white;
+  padding: 10px 0px 0px 0px;
+  width: 150px;
+  font-size: 13px;
+}
+.section-cards .card .header2 h2
+{
+  text-transform: capitalize;
+  color:#f7f7f7;
+  width: 190px;
+  padding: 5px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.section-cards .card .header3 h1
+{
+  text-transform: capitalize;
+  color:cornflowerblue;
+  padding: 10px 0px 0px 0px;
+  width: 150px;
+  font-size: 18px;
+}
+
+.section-cards .card .header3
+{
+  position: absolute;
+  margin-top: -350px;
+  margin-left: 30px;
+}
+.section-cards .card .header3 h1
+{
+  text-transform: capitalize;
+  color:white;
+  padding: 10px 0px 0px 0px;
+  width: 150px;
+  font-size: 13px;
+}
+.section-cards .card .header3 h2
+{
+  text-transform: capitalize;
+  color:#f7f7f7;
+  width: 120px;
+  padding: 5px 0px 0px 0px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.section-cards .card .header3 h2 span
+{
+  
+   text-transform: capitalize;
+   color:#f7f7f7;
+   padding: 5px 0px 0px 0px;
+   font-size: 50px;
+   font-weight: 700;
+}
+.section-cards .content2
+{
+  display: flex;
+  justify-content:center
+
+}
+.section-cards .content2 img
+{
+   width: 100px;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.section-cards .content2 .card
+{ 
+   width: 300px;
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top:100px;
+    margin-left: 50px;
+   
+}
+.section-cards .content2 .card .header4 h1
+{
+  
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 700;
+  padding: 20px 0px 0px 0px;
+}
+.section-cards .content2 .card .header4 p
+{
+ font-size: 14px;
+ font-weight: 600;
+ text-transform: capitalize;
+ color: #4d4b4b;
+}
+
+
+.section-style .part
+{
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   padding: 10px 0px;
+}
+.section-style .content2 .icons img
+{
+   width:400px;
+   margin-inline-end: 10px;
+   padding: 10px 0px;
+}
+.section-style .content3
+{
+ margin-top: 5px;
+  
+}
+.section-style  .icons3 img
+{
+   width:200px;
+}
+footer
+{
+width: 100%;
+background-color: rgb(36, 36, 36);
+margin-top: 150px;
+}
+footer .address
+{
+  display: flex;
+}
+footer .address .address1 
+{
+  width: 30%;
+  padding: 50px 0px;
+  
+}
+footer .address .address1 .parts
+{
+   width: 200px;
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   text-transform: capitalize;
+   opacity: .5;
+}
+hr
+{
+   background-color: #fff;
+   width: 200px;
+   margin-top: -10px;
+   opacity: .5;
+}
+
+footer .address .address1 h3 span
+{
+   color:red
+}
+footer .address .address1 h3
+{
+  font-size:25px;
+  color: white;
+  padding: 8px 0px;
+  width: 250px;
+}
+footer .address  .address2
+{
+  padding: 40px 0px;
+ width: 30%;
+color: white;
+}
+footer .address .address3
+{
+   width: 30%;
+   padding: 50px 0px;
+}
+footer .address  .address2 h1
+{
+  font-size: 15px;
+  text-transform: capitalize;
+  color:white;
+  padding: 15px 0px 20px 0px;
+  }
+ 
+  footer .address .address3 h1
+  {
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    padding: 3px 0px 20px 0px;
+  }
+  footer .address .address3 ul li
+  {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 0px;
+  }
+   footer .copy
+  {
+  background-color:#292828;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content:space-around
+  }
+  footer .copy h6
+  {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    padding: 0px 20px;
+  }
+  footer .copy img
+  {
+   width: 40px;
+   margin-inline-end: 10px;
+  }
+form 
+{
+
+   width: 20%;
+   margin: auto;
+}
+form h1
+{
+   text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+form p
+{
+   text-align: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  color: #4d4b4b;
+}
+form p span
+{
+  color: #292828;
+  text-transform: capitalize;
+  font-size: 12px;
+   font-weight: 700;
+}
+form .form-group  label
+{
+   font-size: 13px;
+   font-weight: 700;
+   color: #4d4b4b;
+}
+form .form-group input
+{
+   background-color: #cacaca;
+}
+form .form-group.form-check label
+{
+   font-size: 13px;
+   font-weight: 700;
+   color: #4d4b4b;
+   text-transform: capitalize;
+}
+
+form .form-group small
+{
+   font-size: 13px;
+   font-weight: 700;
+   color: #4d4b4b;
+   text-transform: capitalize;
+}
